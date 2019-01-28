@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpack Showcase</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body class="container">
+    <header class="page-header">
+        <h1>Tip Calculator</h1>
+    </header>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input type="text" class="form-control" id="inputBillAmount" >
+      </div>
+
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="tipOptions" id="tipTenPecent" > 10%
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="tipOptions" id="tipFifteenPecent" > 15%
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="tipOptions" id="tipTwentyPercent" > 20%
+        </label>
+      </div>
+
+      <div>
+        <Label id ="tipAmountLabel">You are tipping <label class="tip-percentage">10%</label> </Label>
+      </div>
+
+      <ul class="list-group">
+        <li class="list-group-item" id="billAmountLabel" >Bill Amount: 0 </li>
+        <li class="list-group-item">Tip Percentage: <label class="tip-percentage">10%</label></li>
+        <li class="list-group-item" id="totalTipLabel">Amount to Tip: 0</li>
+        <li class="list-group-item" id="billTotalLabel">Total to be Paid: 0</li>
+      </ul>
+</body>
+</html>
